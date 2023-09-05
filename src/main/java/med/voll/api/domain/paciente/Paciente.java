@@ -19,8 +19,9 @@ public class Paciente {
     private Long id;
     private String nombre;
     private String email;
-    private String documento;
     private String telefono;
+    private String documento;
+
 
     @Embedded
     private Direccion direccion;
@@ -47,12 +48,7 @@ public class Paciente {
             this.direccion.actualizarDireccion(datos.direccion());
         }
     }
-
     public void eliminar(){
         this.activo = false;
     }
-
-
-
-
 }

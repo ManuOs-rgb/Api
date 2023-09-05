@@ -5,10 +5,18 @@ import jakarta.validation.constraints.*;
 import med.voll.api.domain.direccion.DatosDireccion;
 
 public record DatosRegistroPaciente(
-        @NotBlank String nombre,
-        @NotBlank @Email String email,
-        @NotBlank @Size(min = 0, max = 15) String telefono,
-        @NotBlank String documento,
-       @NotNull @Valid DatosDireccion direccion
+        @NotBlank
+        String nombre,
+        @NotBlank
+        @Email
+        String email,
+        @NotBlank
+        @Size(min = 0, max = 15)
+        String telefono,
+        @NotBlank
+        String documento,
+       @NotNull
+        @Valid
+        DatosDireccion direccion
 ) {
 }

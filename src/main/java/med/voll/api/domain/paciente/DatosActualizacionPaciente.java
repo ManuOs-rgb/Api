@@ -5,7 +5,8 @@ import jakarta.validation.constraints.NotNull;
 import med.voll.api.domain.direccion.DatosDireccion;
 
 public record DatosActualizacionPaciente(
-        @NotNull Long id,
+        @NotNull
+        Long id,
         String nombre,
         String telefono,
         DatosDireccion direccion
